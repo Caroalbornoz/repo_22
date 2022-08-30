@@ -1,0 +1,822 @@
+@media only screen and (min-width: 600px) {
+  /*-----------FOOTER----------------------*/
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    height: 300px; }
+    .footer-redesociales {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .footer-ubicacion {
+      display: flex;
+      justify-content: center; }
+      .footer-ubicacion .img-ubicacion {
+        height: 40px; }
+      .footer-ubicacion .txt-ubicacion {
+        font-weight: normal;
+        text-align: left;
+        color: white; }
+    .footer-derechos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .footer-derechos .txt-derechos1 {
+        font-weight: normal;
+        text-align: center;
+        color: white; }
+      .footer-derechos .txt-derechos2 {
+        font-weight: lighter;
+        text-align: center;
+        color: white; } }
+
+@media only screen and (max-width: 600px) {
+  /*FOOTER MOBILE*/
+  .footer {
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    grid-template-areas: "redes" "direccion" "copyright";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    height: 400px; }
+    .footer .footer-ubicacion {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      grid-area: "direccion"; }
+    .footer .img-ubicacion {
+      height: 25px; }
+    .footer .txt-ubicacion {
+      font-size: 20px;
+      font-weight: normal;
+      text-align: center;
+      color: white; }
+    .footer .footer-derechos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 300px;
+      grid-area: "copyright"; }
+    .footer .txt-derechos1 {
+      font-weight: normal;
+      font-size: 20px;
+      text-align: center;
+      color: white; }
+    .footer .txt-derechos2 {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 20px;
+      color: white; } }
+
+/*..............MOBILE...............*/
+@media only screen and (max-width: 600px) {
+  /*.............   INDEX  .......................*/
+  #valores__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/banner_estudiojuridico.png"); }
+  .valores__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background-color: #13494e;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    padding: 1px 1px 1px 1px; }
+    .valores__cards .valores__img {
+      width: 60px; }
+    .valores__cards .valores__titulo {
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      color: #29b7c3; }
+    .valores__cards .valores__txt {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      line-height: 20px;
+      padding: 0px 4px 0px 4px; }
+    .valores__cards .valores__experiencia:hover {
+      transform: scale(1.2, 1.2); }
+  /*-------------SECTION INDEX---------------------*/
+  .virtudes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #13494e;
+    height: 2200px; }
+    .virtudes__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 600px;
+      width: 300px; }
+    .virtudes__texto {
+      font-weight: normal;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      line-height: 30px;
+      padding: 0px 4px 0px 4px; }
+    .virtudes__texto {
+      font-weight: normal;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      line-height: 30px;
+      padding: 0px 4px 0px 4px; }
+    .virtudes__img {
+      height: 150px; }
+  /*-----------------------------SOBRE NOSOTROS MOBILE------------------------------*/
+  .nosotros {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px; }
+    .nosotros--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%; }
+  .titulo-quienes {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: black solid 3px;
+    color: black;
+    line-height: 50px; }
+  .txt-quienes {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    line-height: 40px; }
+  .abogados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #cee8e7;
+    height: 1600px;
+    width: 100%; }
+    .abogados--titulo {
+      font-size: 40px;
+      color: black;
+      font-weight: bold; }
+  /*---------------------SERVICIOS -MOBILE PHONE-----------------*/
+  .areas {
+    height: 250px;
+    width: 100%;
+    background-color: #ececec; }
+    .areas--titulo {
+      font-size: 30px;
+      border-top: #000000 solid 3px;
+      line-height: 50px; }
+  .cards {
+    height: 1600px;
+    flex-direction: column; }
+    .cards--servicios {
+      flex-direction: column;
+      margin: 5%;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      height: 1500px;
+      width: 90%; }
+  .blog-section {
+    height: 250px;
+    width: 100%; }
+  .titulo-blog {
+    font-size: 30px;
+    border-top: black solid 3px;
+    line-height: 50px; }
+  #blog {
+    height: 1800px;
+    justify-content: center;
+    align-content: center; }
+  .novedadesmobile, #divorcio, #testamento, #inmobiliaria {
+    height: 600px;
+    width: 400px; }
+  /*--------------------UBICACION MOBILE PHONE------------*/
+  .ubicacion {
+    height: 2000px;
+    align-content: center;
+    justify-content: space-around; }
+  .ubicacion--section {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-top: black solid 3px; }
+  .ubicacion--section {
+    height: 400px;
+    width: 100%; }
+  .frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 60%; }
+    .frase--comillas {
+      height: 50px; }
+    .frase--txt {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      color: #64ccc9;
+      font-weight: bolder;
+      text-align: center; }
+    .frase--titulo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      color: #64ccc9;
+      margin-top: 5px; }
+  /*------------------------------------CONTACTO MOBILE PHONE----------------------------*/
+  .contacto {
+    flex-direction: column;
+    height: 1500px;
+    width: 100%;
+    justify-content: space-evenly; }
+    .contacto--section {
+      height: 400px;
+      justify-content: center;
+      align-content: center; }
+      .contacto--section .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px; }
+        .contacto--section .info--img {
+          height: 20px; }
+        .contacto--section .info--titulo {
+          font-size: 20px;
+          font-weight: bold;
+          color: white; }
+        .contacto--section .info--txt {
+          font-size: 20px;
+          font-weight: normal;
+          color: white; }
+  .form {
+    height: 800px;
+    justify-content: space-evenly;
+    align-items: center; }
+  .titulo-form {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: white; }
+  .form-nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100px; }
+  .txt-nombre {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .boton-nombre {
+    background-color: white;
+    height: 30px;
+    width: 350px;
+    text-align: center; }
+  .form-correo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100px; }
+  .txt-correo {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .boton-correo {
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    text-align: center; }
+  .form-telefono {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px; }
+  .txt-telefono {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .boton-telefono {
+    background-color: white;
+    height: 50px;
+    width: 70%;
+    text-align: center; }
+  .form-mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px; }
+  .txt-mensaje {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .espacio-mensaje {
+    height: 80px;
+    width: 80%; }
+  .boton-enviar {
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    color: gray;
+    font-family: "Raleway", sans-serif; } }
+
+/*---------------    DESKTOP    -----------------------*/
+@media only screen and (min-width: 600px) {
+  #body {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Raleway", sans-serif; }
+  /**************                INDEX            *********************/
+  #valores__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/banner_estudiojuridico.png"); }
+    #valores__section .valorescards {
+      display: flex;
+      justify-content: center;
+      background-color: #13494e; }
+    #valores__section .valores__cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #13494e;
+      flex-direction: column;
+      height: 400px;
+      width: 350px;
+      padding: 1px 1px 1px 1px; }
+      #valores__section .valores__cards .valores__img {
+        height: 60px;
+        width: 60px; }
+      #valores__section .valores__cards .valores__titulo {
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        color: #29b7c3; }
+      #valores__section .valores__cards .valores__txt {
+        font-weight: lighter;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        line-height: 20px;
+        padding: 0px 4px 0px 4px; }
+      #valores__section .valores__cards .valores__experiencia:hover {
+        transform: scale(1.2, 1.2); }
+  .virtudes {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    background-color: #13494e;
+    height: 800px; }
+    .virtudes__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      padding: 1px 1px 1px 1px;
+      height: 400px; }
+    .virtudes__texto {
+      font-weight: normal;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      line-height: 30px;
+      padding: 0px 4px 0px 4px; }
+    .virtudes__texto {
+      font-weight: normal;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      line-height: 30px;
+      padding: 0px 4px 0px 4px; }
+    .virtudes__img {
+      height: 150px; }
+  .valorescards {
+    display: flex;
+    justify-content: center;
+    background-color: #13494e; }
+  .valores__cards {
+    display: flex;
+    justify-content: center;
+    background-color: #13494e;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    padding: 1px 1px 1px 1px; }
+    .valores__cards .valores__img {
+      height: 60px; }
+    .valores__cards .valores__titulo {
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      color: #29b7c3; }
+    .valores__cards .valores__txt {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      line-height: 20px;
+      padding: 0px 4px 0px 4px; }
+    .valores__cards .valores__experiencia:hover {
+      transform: scale(1.2, 1.2); }
+  /*----------------------NOSOTROS-------------------------------------*/
+  .nosotros {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .nosotros--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 400px;
+      width: 80%; }
+  .titulo-quienes {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: black solid 3px;
+    color: black;
+    line-height: 50px; }
+  .txt-quienes {
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    line-height: 40px; }
+  .abogados {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #cee8e7;
+    height: 600px;
+    width: 100%; }
+    .abogados--titulo {
+      font-size: 40px;
+      color: black;
+      font-weight: bold; }
+  /*------------------------------SERVICIOS------------------------------------*/
+  .areas {
+    height: 180px;
+    width: 100%;
+    background-color: #ececec; }
+    .areas--titulo {
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      border-top: black solid 3px;
+      color: black;
+      line-height: 50px; }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    height: 800px; }
+    .cards--servicios {
+      flex-direction: row;
+      margin: 5%; }
+  .blog-section {
+    height: 180px;
+    width: 100%; }
+  .titulo-blog {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    border-top: #000000 solid 3px;
+    color: black;
+    line-height: 50px; }
+  #blog {
+    height: 700px; }
+  .novedades, #divorcio, #testamento, #inmobiliaria {
+    height: 600px;
+    width: 400px; }
+  .ubicacion {
+    height: 100%;
+    height: 2000px; }
+  .ubicacion--section {
+    height: 150px;
+    width: 100%; }
+    .ubicacion--section .ubicacion--titulo {
+      font-size: 35px;
+      font-weight: bold;
+      border-top: black solid 3px;
+      line-height: 50px; }
+  .frase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 60%; }
+    .frase--comillas {
+      height: 50px; }
+    .frase--txt {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      color: #cee8e7;
+      text-align: center;
+      font-weight: bolder; }
+    .frase--titulo {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      color: #cee8e7;
+      font-weight: 200;
+      margin-top: 25px; }
+  /*------------------------------------CONTACTO----------------------------*/
+  .contacto {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 800px;
+    width: 100%;
+    background-image: url("../img/fondo_form.jpg"); }
+    .contacto--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 800px;
+      width: 600px; }
+      .contacto--section .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px; }
+        .contacto--section .info--img {
+          height: 20px; }
+        .contacto--section .info--titulo {
+          font-size: 20px;
+          font-weight: bold;
+          color: white; }
+        .contacto--section .info--txt {
+          font-size: 20px;
+          font-weight: normal;
+          color: white; }
+  .titulo-form {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: white; }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    width: 800px; }
+  .form-nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px; }
+    .form-nombre .txt-nombre {
+      font-size: 15px;
+      text-align: center;
+      font-weight: normal;
+      color: white; }
+    .form-nombre .boton-nombre {
+      background-color: white;
+      height: 50px;
+      width: 350px;
+      text-align: center; }
+  .form-correo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px; }
+  .txt-correo {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .boton-correo {
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    text-align: center; }
+  .form-telefono {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100px; }
+  .txt-telefono {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .boton-telefono {
+    background-color: white;
+    height: 50px;
+    width: 350px;
+    text-align: center; }
+  .form-mensaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px; }
+  .txt-mensaje {
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal;
+    color: white; }
+  .espacio-mensaje {
+    height: 80px;
+    width: 100%; }
+  .boton-enviar {
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    color: #ececec;
+    font-family: "Raleway", sans-serif; } }
+
+body .navbar-brand {
+  height: 100px; }
+
+body .navbar-nav {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/*----------------------INDEX-------------------------------*/
+body {
+  font-family: "Raleway", sans-serif; }
+
+/*---------------------NOSOTROS-------------------------*/
+.boton-contactame:hover {
+  transform: scale(1.2, 1.2);
+  background-color: #64ccc9;
+  color: black; }
+
+.nosotros--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%; }
+
+/*-------------------SERVICIOS--------------------*/
+.areas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .areas--titulo {
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: black; }
+
+.cards {
+  display: flex;
+  background-color: #cee8e7; }
+  .cards--servicios {
+    display: flex; }
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.titulo-blog {
+  text-align: center;
+  font-weight: bold;
+  color: black; }
+
+#blog {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between; }
+
+.noticias, #divorcio, #testamento, #inmobiliaria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 400px;
+  background-color: #13494e;
+  padding: 2px 8px 2px 8px; }
+
+/*--------------------UBICACION-----------------------------*/
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/mapa_fondo.png"); }
+
+.ubicacion--section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ececec; }
+
+.ubicacion--titulo {
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  font-family: 'Raleway', sans-serif; }
+
+.frase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.frase--txt {
+  font-family: "Cormorant Garamond", serif;
+  color: #cee8e7;
+  font-weight: bolder;
+  text-align: center; }
+
+.frase--titulo {
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  color: #cee8e7; }
+
+/*------------------------------------CONTACTO----------------------------*/
+.contacto {
+  display: flex;
+  background-image: url("../img/fondo_form.jpg"); }
+
+.contacto--section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+
+/*----------------------------------MOBILE PHONE ------------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  body {
+    font-family: "Raleway", sans-serif; } }

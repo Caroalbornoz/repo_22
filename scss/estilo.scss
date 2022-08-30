@@ -1,0 +1,214 @@
+@import "footer";
+@import "media.sm";
+@import "media.lg";
+@import "menu";
+@import "variables";
+
+
+    *{
+        margin: 0px;
+       padding: 0px;     
+        
+     }
+/*----------------------INDEX-------------------------------*/
+body{
+    font-family: $font_principal;    }
+
+  
+/*---------------------NOSOTROS-------------------------*/
+
+.boton-contactame:hover{
+    transform: scale(1.2,1.2);
+    background-color: #64ccc9;
+    color: rgb(0, 0, 0);
+}
+
+.nosotros--section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+/*-------------------SERVICIOS--------------------*/
+
+    .areas{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+
+        &--titulo{
+            font-family: $font_principal;
+            text-align: center;
+            font-weight: bold;
+            color: $color_cinco; 
+            
+        }
+        
+    }
+
+    .cards{
+        display: flex;
+        background-color: $color_tres;
+    
+        &--servicios{
+            display: flex;
+            
+        }
+        
+    }
+
+
+
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.titulo-blog{
+    text-align: center;
+    font-weight: bold;
+    color: black; 
+    
+}
+
+
+
+#blog{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    
+ 
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    background-color: #13494e;
+    padding: 2px 8px 2px 8px ;
+
+}
+
+#divorcio{
+    @extend .noticias
+    
+}
+
+#testamento{
+    @extend .noticias
+    
+}
+
+#inmobiliaria{
+    @extend .noticias
+    
+}
+
+
+
+/*--------------------UBICACION-----------------------------*/
+
+.ubicacion
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+    background-image: url("../img/mapa_fondo.png");    
+}
+
+.ubicacion--section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $color_seis;
+    
+    
+}
+
+.ubicacion--titulo{    
+    text-align: center;
+    font-weight: bolder;
+    color: $color_cinco; 
+    font-family: 'Raleway', sans-serif; 
+    
+}
+
+
+.frase{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+
+.frase--txt{
+    font-family: $font_secundaria;
+    color:$color_tres;
+    font-weight:bolder;
+    text-align: center;
+}
+
+.frase--titulo{
+    font-family: $font_secundaria;
+    text-align: center;
+    color: $color_tres;
+    
+    
+}
+
+/*------------------------------------CONTACTO----------------------------*/ 
+
+.contacto{
+    display: flex;    
+    background-image: url("../img/fondo_form.jpg"); 
+}
+
+.contacto--section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+/*----------------------------------MOBILE PHONE ------------------------------------------------------------------*/
+
+@media only screen and (min-width:600px){
+
+    body{
+        font-family: $font_principal;
+         }
+    
+
+}
+
+
+
+
+

@@ -1,0 +1,140 @@
+@import "variables";
+  
+@media only screen and (min-width:600px){
+  /*-----------FOOTER----------------------*/ 
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-items:center;
+        background-color: $color_cinco;
+        height: 300px; 
+
+        
+        &-redesociales{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;     
+        }
+        
+        
+        
+        &-ubicacion{
+            display: flex;
+            justify-content: center;
+            
+        
+        .img-ubicacion{
+            height: 40px;
+        }
+        
+        .txt-ubicacion{
+        
+            font-weight: normal;
+            text-align: left;
+            color:$color_cuatro;
+            }
+        
+        }
+
+
+
+
+
+
+        &-derechos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            .txt-derechos1{
+                font-weight: normal;
+                
+                text-align: center;
+                color:$color_cuatro;
+            }
+            .txt-derechos2{
+                font-weight: lighter;
+                text-align: center;
+                color:$color_cuatro;
+            }
+    
+
+        }
+
+        
+
+
+    } 
+   
+}
+
+@media only screen and (max-width:600px){
+   /*FOOTER MOBILE*/ 
+
+   .footer{
+    display: grid;
+    grid-template-rows: 25% 25% 25%;
+    grid-template-areas:    "redes"
+                            "direccion"
+                            "copyright";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: $color_cinco;
+    height:200px;
+    width: 100%;
+    height: 400px;
+
+
+
+      
+    .footer-ubicacion{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    grid-area: "direccion";
+
+    }
+
+    .img-ubicacion{
+        height: 25px;
+    }
+
+    .txt-ubicacion{
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    color: $color_cuatro;
+    }
+
+    .footer-derechos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 300px;
+        grid-area: "copyright";
+
+
+    }
+
+    .txt-derechos1{
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        color: $color_cuatro;
+    }
+    .txt-derechos2{
+        font-weight: lighter;
+        text-align: center;
+        font-size: 20px;
+        color: $color_cuatro;
+    }
+
+
+
+}
+
+}

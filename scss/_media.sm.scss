@@ -1,0 +1,508 @@
+@import "variables";
+
+/*..............MOBILE...............*/
+
+@media only screen and (max-width:600px){
+
+/*.............   INDEX  .......................*/
+    
+    #valores__section{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        align-content: center;
+        align-items: center;
+        background-image: url("../img/banner_estudiojuridico.png");     
+        
+    }
+    
+    
+    .valores__cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        background-color:$color_uno; 
+        flex-direction: column;        
+        height: 400px;
+        width: 350px;        
+        padding: 1px 1px 1px 1px ;
+     
+    .valores__img{
+        
+        width: 60px;
+        
+    }
+    
+    
+    
+    .valores__titulo{
+        font-weight: bold;
+        text-align: center;
+        font-size: 30px;
+        color:$color_dos;
+    
+    }
+    
+    
+    .valores__txt{
+        font-weight: lighter;
+        text-align: center;
+        font-size: 15px;
+        color: $color_cuatro;
+        line-height: 20px;
+        padding: 0px 4px 0px 4px;
+    }
+    
+    
+    
+    .valores__experiencia:hover{ 
+        transform: scale(1.2,1.2);
+    }  
+    }
+    
+    
+    
+    
+     
+    /*-------------SECTION INDEX---------------------*/ 
+    
+    .virtudes{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-content: center;
+        background-color: $color_uno;
+        height: 2200px;
+        
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            background-color:$color_cuatro;
+            height: 600px;
+            width: 300px;
+            
+            
+        
+        }
+        
+        
+        &__texto{
+            font-weight:normal;
+            text-align: center;
+            font-size: 20px;
+            color: $color_cinco;
+            line-height: 30px;
+            padding: 0px 4px 0px 4px;
+        }
+        
+        
+        &__texto{
+            font-weight:normal;
+            text-align: center;
+            font-size: 20px;
+            color: $color_cinco;
+            line-height: 30px;
+            padding: 0px 4px 0px 4px;
+        }
+        
+        &__img{
+           height: 150px;
+           
+        }
+    }
+
+
+/*-----------------------------SOBRE NOSOTROS MOBILE------------------------------*/
+    .nosotros{
+    background-color: $color_seis;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+
+        &--section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 80%;
+         }
+    }
+
+
+
+    .titulo-quienes{
+        font-family: $font_principal;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        border-top: $color_cinco solid 3px;
+        color: $color_cinco;
+        line-height: 50px;
+
+    }
+
+    .txt-quienes{
+
+    font-size: 14px;
+    text-align: center;
+    color: $color_cinco;
+    line-height: 40px;
+    }
+
+
+    .abogados{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:$color_tres;
+        height: 1600px;
+        width: 100%; 
+
+        &--titulo{
+            font-size: 40px;
+            color: $color_cinco;
+            font-weight: bold;
+        }
+
+    }
+
+
+
+
+    /*---------------------SERVICIOS -MOBILE PHONE-----------------*/
+
+    
+
+
+    .areas{
+        height: 250px;
+        width: 100%;
+        background-color: rgb(236, 236, 236);
+
+        &--titulo{
+        
+            font-size: 30px;    
+            border-top: #000000 solid 3px;    
+            line-height: 50px; 
+        
+        }
+    }
+    
+    
+    .cards{
+        height: 1600px;
+        flex-direction: column;
+        
+        
+        
+        
+        &--servicios{
+        
+        flex-direction: column;
+        margin: 5%;
+        align-content: center;        
+        justify-content: center;
+        align-items: center;
+        justify-items: center;    
+        height: 1500px;
+        width: 90%;
+        
+
+        }
+    }
+    
+    
+
+    .blog-section{
+        height: 250px;
+        width: 100%;
+        
+
+
+    }
+    .titulo-blog{    
+        font-size: 30px;    
+        border-top: $color_cinco solid 3px;    
+        line-height: 50px; 
+    }
+
+    #blog{
+            height: 1800px;
+            justify-content: center;
+            align-content: center;
+        
+        }
+    
+    .novedadesmobile{
+        height: 600px;
+        width: 400px;
+    }
+    
+        #divorcio{
+            @extend .novedadesmobile
+        
+            
+        }
+        
+    #testamento{   
+            @extend .novedadesmobile
+            
+            
+        }
+        
+    #inmobiliaria{   
+        @extend .novedadesmobile  
+        
+        }
+
+
+
+
+
+
+    /*--------------------UBICACION MOBILE PHONE------------*/
+
+    .ubicacion{
+        height: 2000px;    
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    .ubicacion--section{
+        
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        border-top: $color_cinco solid 3px;
+        
+    }  
+
+
+    .ubicacion--section{ 
+        height: 400px;
+        width: 100%;
+    
+        
+    }
+
+    .frase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 500px;
+        width: 60%;
+
+
+        &--comillas{
+            height: 50px;
+        }
+    
+    
+        &--txt{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 30px;
+            color:#64ccc9 ;
+            font-weight:bolder;
+            text-align: center;
+        }
+    
+        &--titulo{
+            font-family: 'Cormorant Garamond', serif;
+            font-size:30px ;
+            font-weight: normal;
+            text-align: center;
+            color: #64ccc9 ;
+            margin-top: 5px;
+            
+        }
+    }
+    
+
+
+/*------------------------------------CONTACTO MOBILE PHONE----------------------------*/ 
+
+    .contacto{
+        flex-direction: column;
+        height: 1500px;
+        width: 100%;
+        justify-content: space-evenly;
+        
+        &--section{
+            height: 400px;    
+            justify-content: center;
+            align-content: center;
+            
+
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+        
+                &--img{
+                    height: 20px;
+                }
+                
+                &--titulo{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $color_cuatro;
+                    
+                }
+                
+                &--txt{
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: $color_cuatro;
+                    
+                }
+            }
+        
+        }
+    
+   
+    }
+    
+   
+    .form{
+        height: 800px;
+        
+        justify-content: space-evenly;
+        align-items: center;
+        
+        
+    }
+    
+    
+    .titulo-form{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+    }
+    
+    .form-nombre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:80%;
+        height: 100px;
+    }
+    
+    .txt-nombre{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+        
+    }
+    
+    .boton-nombre{
+        background-color: white;
+        height: 30px;
+        width: 350px;
+        text-align: center;
+    
+    }
+    
+    
+    
+    .form-correo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        height: 100px;
+    }
+    
+    .txt-correo{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+    }
+    
+    .boton-correo{
+        background-color: white;
+        height: 50px;
+        width: 350px;
+        text-align: center;
+    
+    }
+    
+    
+    .form-telefono{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .txt-telefono{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+    }
+    
+    .boton-telefono{
+        background-color: white;
+        height: 50px;
+        width: 70%;
+        text-align: center;
+    
+    }
+    
+    .form-mensaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+    
+    .txt-mensaje{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: white;
+    
+    }
+    
+    .espacio-mensaje{
+        height: 80px;
+        width:80%;
+    }
+    
+    .boton-enviar{
+        font-size: 20px;
+        background-color: white;
+        text-align: center;
+        color: gray;
+        font-family: $font_principal;
+    
+    
+    }
+    
+
+
+
+}
+
+   
+

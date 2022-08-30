@@ -1,0 +1,582 @@
+@import "variables";
+
+
+/*---------------    DESKTOP    -----------------------*/
+
+@media only screen and (min-width:600px){
+
+    #body{
+        display: flex;
+        justify-content: space-around;
+        font-family: $font_principal; 
+    }
+
+
+
+/**************                INDEX            *********************/    
+
+
+    #valores__section{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: center;
+    align-items: center;
+    background-image: url("../img/banner_estudiojuridico.png");    
+            
+        
+
+        .valorescards{
+        display: flex;
+        justify-content: center;
+        background-color:$color_uno;  
+
+        }
+        
+        .valores__cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:$color_uno; 
+        flex-direction: column;    
+        height: 400px;
+        width: 350px;    
+        padding: 1px 1px 1px 1px ;
+        
+            .valores__img{
+                height: 60px;
+                width: 60px;
+                
+            }
+
+
+
+            .valores__titulo{
+                font-weight: bold;
+                text-align: center;
+                font-size: 30px;
+                color:$color_dos;
+
+            }
+
+
+            .valores__txt{
+                font-weight: lighter;
+                text-align: center;
+                font-size: 15px;
+                color: $color_cuatro;
+                line-height: 20px;
+                padding: 0px 4px 0px 4px;
+            }
+
+
+
+            .valores__experiencia:hover{ 
+                transform: scale(1.2,1.2);
+            }  
+        }
+    }
+
+
+
+    .virtudes{
+    display: grid;
+    grid-template-columns:  25% 25% 25%;
+    justify-content:space-evenly;
+    align-content: center;
+    justify-items: center;
+    background-color: $color_uno;
+    height: 800px;
+    
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center ;
+        background-color:$color_cuatro;
+        padding: 1px 1px 1px 1px ;
+        height: 400px;
+        
+    
+    }
+    
+    
+    &__texto{
+        font-weight:normal;
+        text-align: center;
+        font-size: 20px;
+        color: $color_cinco;
+        line-height: 30px;
+        padding: 0px 4px 0px 4px;
+    }
+    
+    
+    &__texto{
+        font-weight:normal;
+        text-align: center;
+        font-size: 20px;
+        color: $color_cinco;
+        line-height: 30px;
+        padding: 0px 4px 0px 4px;
+    }
+    
+    &__img{
+       height: 150px;
+       
+    }
+    }
+
+
+
+
+    .valorescards{
+            display: flex;
+            justify-content: center;
+            background-color:$color_uno;  
+
+     }
+    .valores__cards{
+    display: flex;
+    justify-content: center;
+    background-color:$color_uno; 
+    flex-direction: column;    
+    height: 400px;
+    width: 350px;    
+    padding: 1px 1px 1px 1px ;
+        
+        
+            .valores__img{
+            height: 60px;          
+            }
+
+
+
+        .valores__titulo{
+            font-weight: bold;
+            text-align: center;
+            font-size: 30px;
+            color:$color_dos;
+
+        }
+
+
+        .valores__txt{
+            font-weight: lighter;
+            text-align: center;
+            font-size: 15px;
+            color: $color_cuatro;
+            line-height: 20px;
+            padding: 0px 4px 0px 4px;
+        }
+
+
+
+        .valores__experiencia:hover{ 
+            transform: scale(1.2,1.2);        }  
+
+
+
+    }
+
+
+/*----------------------NOSOTROS-------------------------------------*/
+
+    .nosotros{
+        background-color: rgb(236, 236, 236);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        &--section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 400px;
+            width: 80%;
+        }
+    }
+
+    
+
+    .titulo-quienes{
+        font-family: $font_principal;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        border-top: $color_cinco solid 3px;
+        color: $color_cinco;
+        line-height: 50px;
+    
+    }
+
+    .txt-quienes{
+
+    font-size: 14px;
+    text-align: center;
+    color: $color_cinco;
+    line-height: 40px;
+    }
+
+
+    .abogados{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:$color_tres;
+        height: 600px;
+        width: 100%; 
+
+        &--titulo{
+            font-size: 40px;
+            color: $color_cinco;
+            font-weight: bold;
+        }
+    
+    }
+
+
+
+
+
+
+/*------------------------------SERVICIOS------------------------------------*/
+
+    .areas{
+        height: 180px;
+        width: 100%;
+        background-color: $color_seis;
+
+        &--titulo{
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            border-top: $color_cinco solid 3px;
+            color: $color_cinco;
+            line-height: 50px;   
+        
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: center;
+        justify-items: center;
+        height: 800px;
+
+        &--servicios{
+            flex-direction: row;
+            margin:5%        
+            
+        }
+    }
+    
+
+    .blog-section{
+        height: 180px;
+        width: 100%;       
+        
+
+    }
+
+    .titulo-blog{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        border-top: #000000 solid 3px;
+        color: black;
+        line-height: 50px; 
+        
+    }
+
+    #blog{
+        height: 700px;
+    
+    }
+    
+    .novedades{
+        height: 600px;
+        width: 400px;
+    }
+
+    #divorcio{
+        @extend .novedades
+        
+    }
+
+    #testamento{   
+        @extend .novedades
+        
+        
+    }
+
+    #inmobiliaria{   
+        @extend .novedades
+
+    }
+
+
+
+  
+
+    .ubicacion{
+
+    height: 100%;
+    height: 2000px;
+                }
+      
+        
+    .ubicacion--section{ 
+        height: 150px;
+         width: 100%;
+           
+         
+            .ubicacion--titulo{
+                font-size: 35px;
+                font-weight: bold;
+                border-top: $color_cinco solid 3px;
+                line-height: 50px;
+            
+            
+            }   
+        }
+        
+   
+    
+    
+    
+    
+    
+    .frase{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 400px;
+        width: 60%;
+
+
+
+        &--comillas{
+            height: 50px;
+        }
+        
+        
+        &--txt{
+            font-family: $font_secundaria;
+            font-size: 30px;
+            color: $color_tres ;        
+            text-align: center;
+            font-weight:bolder;
+            
+        }
+        
+       &--titulo{
+            font-family: $font_secundaria;
+            font-size: 30px;
+            color: $color_tres ;        
+            font-weight: 200;
+            margin-top: 25px;
+            
+        }
+    
+        }   
+   
+
+
+
+/*------------------------------------CONTACTO----------------------------*/ 
+
+    .contacto{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        height:800px;
+        width: 100%;
+        background-image: url("../img/fondo_form.jpg"); 
+
+
+
+        &--section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 800px;
+            width: 600px;
+
+
+
+                
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+
+
+
+                &--img{
+                    height: 20px;
+                }
+            
+                &--titulo{
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $color_cuatro;
+                    
+                }
+            
+                &--txt{
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: $color_cuatro;
+                    
+                }
+            }
+
+        }
+    }
+
+
+    .titulo-form{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        color: $color_cuatro;
+    }
+
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 600px;
+        width: 800px;
+        
+    }
+
+
+   
+    .form-nombre{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+
+
+
+        .txt-nombre{
+            font-size: 15px;
+            text-align: center;
+            font-weight: normal;
+            color: $color_cuatro;
+            
+        }
+    
+        .boton-nombre{
+            background-color: $color_cuatro;
+            height: 50px;
+            width: 350px;
+            text-align: center;
+    
+        }
+    }
+
+    
+
+
+
+    .form-correo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .txt-correo{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: $color_cuatro;
+    }
+
+    .boton-correo{
+        background-color: $color_cuatro;
+        height: 50px;
+        width: 350px;
+        text-align: center;
+
+    }
+
+
+    .form-telefono{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .txt-telefono{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color:$color_cuatro;
+    }
+
+    .boton-telefono{
+        background-color: $color_cuatro;
+        height: 50px;
+        width: 350px;
+        text-align: center;
+
+    }
+
+    .form-mensaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    .txt-mensaje{
+        font-size: 15px;
+        text-align: center;
+        font-weight: normal;
+        color: $color_cuatro;
+
+    }
+
+    .espacio-mensaje{
+        height: 80px;
+        width: 100%;
+    }
+
+    .boton-enviar{
+        font-size: 20px;
+        background-color: $color_cuatro;
+        text-align: center;
+        color: $color_seis;
+        font-family: $font_principal;
+    }
+
+}
+
+
+
+
